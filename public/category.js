@@ -1,0 +1,1 @@
+import{renderCategory,cats}from'./site.js';const cat=document.body.dataset.cat;document.querySelector('[data-title]').textContent=cats[cat]||'المنتجات';await renderCategory(cat,document.querySelector('[data-grid]'));
