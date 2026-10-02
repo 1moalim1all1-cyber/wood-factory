@@ -1,0 +1,18 @@
+/* Performance layer: keeps the same visual design while reducing off-screen paint and GPU cost. */
+.slide{content-visibility:auto;contain-intrinsic-size:100vh;contain:layout paint style}
+.hero{content-visibility:visible;contain:none}
+.slide::after{will-change:auto}
+.factory::after,.products::after,.materials::after,.workflow::after,.portfolio::after,.contact::after{background-image:none!important}
+.factory.bg-ready::after{background-image:url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1400&q=68')!important}
+.products.bg-ready::after{background-image:url('https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1400&q=68')!important}
+.materials.bg-ready::after{background-image:url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1400&q=68')!important}
+.workflow.bg-ready::after{background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=68')!important}
+.portfolio.bg-ready::after{background-image:url('https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1400&q=68')!important}
+.contact.bg-ready::after{background-image:url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=68')!important}
+.hero::after{background-image:url('https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?auto=format&fit=crop&w=1500&q=72')!important}
+.float-card,.glass-panel,.site-header{backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+.product-inner,.feature-card,.btn,.main-nav a:after{will-change:transform}
+.reveal.show{will-change:auto}
+img{content-visibility:auto}
+@media(max-width:900px){.float-card,.glass-panel,.site-header{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}.slide{contain:layout paint style;contain-intrinsic-size:900px}.hero{contain:none}.stack-stage{perspective:1100px}}
+@media(prefers-reduced-motion:reduce){.reveal,.product-inner,.feature-card,.btn{transition-duration:.2s!important}}
