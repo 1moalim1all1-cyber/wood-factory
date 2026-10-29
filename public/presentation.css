@@ -190,3 +190,37 @@ body{background:#f7f8fa;color:#20262d}
 .dot.active span:first-child{background:linear-gradient(135deg,#d8b76c,#98702d)}
 .form-grid input:focus,.form-grid textarea:focus,.form-grid select:focus{border-color:#b68b3c;box-shadow:0 0 0 3px rgba(182,139,60,.13)}
 ::selection{background:#e8d5ad;color:#2b251b}
+
+/* Premium dark-charcoal timber and muted gold finish */
+:root{--bg:#252728;--bg2:#303232;--panel:#343536;--panel-2:#3d3b38;--line:#675a47;--gold:#c29a52;--gold-2:#e0ba76;--gold-3:#9b7434;--cream:#f4eada;--cream-2:#e4d4bb;--text:#f4f0e9;--muted:#d1c6b8;--shadow:0 6px 22px rgba(0,0,0,.18);--shadow-2:0 10px 28px rgba(0,0,0,.24)}
+body{background:#252728;color:var(--text)}
+.deck{background:linear-gradient(155deg,#292b2b 0%,#353230 52%,#292b2b 100%)!important}
+.deck::-webkit-scrollbar-track{background:#252728}
+.site-header{background:#292a2af5;border:1px solid #65553b;border-bottom:2px solid #bd9250;box-shadow:0 6px 16px #0002}
+.brand-name,.main-nav a{color:#f0d5a5}
+.main-nav a::after{background:linear-gradient(90deg,#b88c42,#e6c68d)}
+.title-xl,.title-lg{color:#fff6e8}
+.subtitle,.feature-card p,.step p,.catalog-info p{color:#d5c9ba}
+.eyebrow,.metric strong,.contact-item strong,.spec-item strong,.catalog-info small,.contact-phone{color:#e0ba76}
+.chip,.glass-panel,.feature-card,.metric,.swatch,.step,.contact-panel,.spec-item,.contact-item,.catalog-card,.catalog-filter,.btn-ghost{background:#383838;border:1px solid #685b47;box-shadow:0 4px 18px #0002;color:#f3e9dc}
+.feature-card b,.swatch b,.step h3,.catalog-info h3{color:#fff5e9}
+.metric span,.swatch small,.spec-item span,.contact-item span,.badge-float span{color:#d4c7b4}
+.btn-primary{background:linear-gradient(135deg,#e2bf7b,#bc9048 58%,#9f752f);color:#24190a;border:1px solid #c5a064;box-shadow:0 5px 16px #0003}
+.btn-primary:hover{background:linear-gradient(135deg,#f0d499,#c3964c);color:#24190a}
+.btn-ghost{color:#f2e4d1;border-color:#a78b5a}
+.badge-float{background:#393630;border-color:#a88b53}
+.badge-float b{color:#e8bf76}
+.back{background:linear-gradient(145deg,#514735,#343433);color:#fff7eb;border-color:#897452}
+.back ul{color:#e3d7c7}
+.catalog-empty{color:#d2c4b2;border-color:#76644b}
+.catalog-photo{background:linear-gradient(135deg,#514837,#303031);color:#eddbba}
+.catalog-filter.active{background:#bd914c;color:#23190d;border-color:#bd914c}
+.catalog-filter:not(.active){border-color:#746148}
+.form-grid .field,.form-grid textarea,.form-grid select{background:#2e3030;border:1px solid #74644c;color:#f8f2e8}
+.form-grid select option{background:#2e3030;color:#f8f2e8}
+.form-grid input::placeholder,.form-grid textarea::placeholder{color:#b8aa97}
+.slide-foot,.side-nav .dot{color:#dfd0b9}
+.side-nav .dot small{background:#363534;color:#f0dfc6;border-color:#74644c}
+.side-nav .dot span:first-child{background:#343434;border-color:#a08964}
+.contact-phone:hover{color:#fff0ca}
+@media(max-width:760px){.site-header{background:#292a2a}.slide{background:transparent}}
