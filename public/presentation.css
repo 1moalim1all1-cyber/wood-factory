@@ -90,3 +90,7 @@
 .deck{scroll-snap-type:none!important}
 .slide{scroll-snap-align:none}
 @media(max-width:1150px){.product-inner{transform-style:flat}.product-box{perspective:none}.product-box .face{backface-visibility:visible}.product-box .back{display:none}.product-box.is-flipped .front{display:none}.product-box.is-flipped .back{display:flex;transform:none;position:relative;min-height:100%}.product-box.is-flipped .product-inner{transform:none!important}.product-box:not(.is-flipped) .product-inner{transform:none!important}}
+
+/* Clearly legible contact numbers */
+.contact-phone{display:inline-block;color:var(--gold-2);direction:ltr;unicode-bidi:isolate;font-size:clamp(19px,2vw,24px);font-weight:800;margin-top:6px;letter-spacing:.5px;text-decoration:underline;text-underline-offset:4px}
+.contact-phone:hover{color:#fff}
