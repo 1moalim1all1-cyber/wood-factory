@@ -94,3 +94,50 @@
 /* Clearly legible contact numbers */
 .contact-phone{display:inline-block;color:var(--gold-2);direction:ltr;unicode-bidi:isolate;font-size:clamp(19px,2vw,24px);font-weight:800;margin-top:6px;letter-spacing:.5px;text-decoration:underline;text-underline-offset:4px}
 .contact-phone:hover{color:#fff}
+
+/* Al Tareq 2026 warm timber showroom: light, legible, GPU-friendly */
+:root{--bg:#f8f4ed;--bg2:#efe6d7;--panel:#fffdfa;--panel-2:#f4ece0;--line:#dfd2bf;--gold:#b78b40;--gold-2:#946a2e;--gold-3:#79511f;--cream:#fff9ec;--cream-2:#eadac3;--text:#382b20;--muted:#695b4d;--shadow:0 8px 26px rgba(76,51,26,.09);--shadow-2:0 12px 32px rgba(76,51,26,.13)}
+body{background:#f8f4ed;color:var(--text)}
+.deck{background:radial-gradient(circle at 92% 5%,#eee0c8 0,transparent 30%),linear-gradient(160deg,#f9f6f0 0%,#f2e9db 52%,#fcf9f4 100%)!important}
+.deck::-webkit-scrollbar-track{background:#f1e8da}
+.site-header{background:#fffaf2f5;border:1px solid #e2d3bd;box-shadow:0 4px 22px #48332114}
+.main-nav a{color:#48392a}
+.brand-name{color:#765122;text-shadow:none}
+.side-nav .dot{color:#66523b}
+.side-nav .dot span:first-child{border-color:#c7b69c;background:#fff9ed}
+.side-nav .dot small{background:#fffaf1;color:#503c25;border-color:#ddc7a8;box-shadow:0 3px 12px #39240f10}
+.slide::before{background:none!important}
+.slide::after{background-image:none!important;opacity:0!important}
+.eyebrow{color:#986a2c}
+.subtitle{color:var(--muted)}
+.chip{background:#fffcf6;border:1px solid #e4d6c2;color:#5d4630}
+.glass-panel,.feature-card,.metric,.swatch,.step,.contact-panel{background:#fffcf8;border-color:#e7d9c8;box-shadow:0 7px 24px #6144200e}
+.feature-card b,.swatch b{color:#3f3023}
+.metric strong,.spec-item strong,.contact-item strong{color:#8a5e25}
+.metric span,.swatch small,.spec-item span,.contact-item span{color:#685747}
+.spec-item,.contact-item{background:#f6eee2;border-color:#e2d3bf}
+.step ul{color:#655545}
+.btn-ghost{background:#fff9ee;border-color:#c9aa7d;color:#644821}
+.btn-primary{background:linear-gradient(135deg,#dfc28e,#c89b55);color:#352414;box-shadow:0 5px 15px #ab804020}
+.badge-float{background:#fff9eb;border-color:#d9bb86}
+.badge-float b{color:#82561f}
+.badge-float span{color:#5e4a33}
+.back{background:linear-gradient(145deg,#fffaed,#e9d9bc);color:#3b3024;border-color:#dbc8aa}
+.back ul{color:#564632}
+.field,.form-grid textarea,.form-grid select{background:#fffdfa;border:1px solid #d8c7af;color:#35291e}
+.form-grid select option{background:#fffdfa;color:#35291e}
+.form-grid input::placeholder,.form-grid textarea::placeholder{color:#877966}
+.slide-foot{color:#715f49}
+.mouse{border-color:#b9a788}
+.float-card{border-color:#dac8ad}
+.catalog-card{background:#fffaf2;border-color:#decbb0;color:#443321}
+.catalog-empty{color:#665647;border-color:#decbb0}
+.catalog-photo{background:linear-gradient(135deg,#e8d5bb,#f8f1e7);color:#765c39}
+.catalog-info small{color:#916527}
+.catalog-filter{background:#fff9ed;color:#5a4228;border-color:#d4b58a}
+.catalog-filter.active{background:#bc9251;color:#271c10}
+.catalog-info p{color:#625343}
+.contact-phone{color:#79501c}
+@media(max-width:760px){.site-header{background:#fffaf5f5}.slide{background:transparent}.badge-float{display:none}}
+/* Keep text over photography readable independently of the page theme */
+.front,.front h3,.front p,.front .overlay,.card-info,.card-info strong,.card-info span,.shot .label,.shot .label strong,.shot .label span{color:#fff7ee}
