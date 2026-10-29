@@ -61,3 +61,11 @@
 .gallery-grid .shot{cursor:zoom-in}
 @media(max-width:900px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.catalog-grid{grid-template-columns:1fr}.catalog-filters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px}.catalog-filter{flex:0 0 auto}.catalog-photo{height:210px}}
+
+/* Clear, always-visible factory brand at every screen size */
+.site-header .brand{min-width:0;flex:0 1 auto}
+.brand-link{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-logo{display:block;width:clamp(65px,9vw,115px);height:55px;object-fit:contain;flex-shrink:0}
+.brand-name{display:block;white-space:nowrap;font-size:clamp(17px,1.55vw,23px);font-weight:900;line-height:1.4;color:var(--gold-2);text-shadow:0 1px 8px rgba(0,0,0,.28)}
+@media(max-width:760px){.brand-link{gap:7px}.brand-logo{width:clamp(48px,14vw,70px);height:46px}.brand-name{font-size:clamp(15px,4vw,19px)}.site-header .brand{flex:1 1 auto}.header-actions{flex-shrink:0}}
+@media(max-width:360px){.brand-logo{width:42px}.brand-name{font-size:14px}.header-actions .btn-primary{font-size:10px;padding:8px}}
