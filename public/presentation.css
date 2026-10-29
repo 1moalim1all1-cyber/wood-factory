@@ -224,3 +224,23 @@ body{background:#252728;color:var(--text)}
 .side-nav .dot span:first-child{background:#343434;border-color:#a08964}
 .contact-phone:hover{color:#fff0ca}
 @media(max-width:760px){.site-header{background:#292a2a}.slide{background:transparent}}
+
+/* Richer champagne gold accents, maintaining premium dark showroom */
+:root{--gold:#d4af5a;--gold-2:#f0cc84;--gold-3:#a97a2f;--line:#8a6e42}
+.site-header{border:1px solid rgba(212,175,90,.45);border-bottom:2px solid var(--gold)}
+.brand-name,.eyebrow,.metric strong,.contact-item strong,.spec-item strong,.catalog-info small,.contact-phone{color:var(--gold-2)}
+.main-nav a{color:#f3dfb3}
+.main-nav a::after{background:linear-gradient(90deg,var(--gold),var(--gold-2));height:3px}
+.btn-primary{background:linear-gradient(135deg,#f0cc84 0%,#d4af5a 45%,#a97a2f 100%);color:#24190a;border:1px solid #d8b56a;box-shadow:0 8px 22px rgba(212,175,90,.22)}
+.btn-primary:hover{background:linear-gradient(135deg,#f7d99a,#ddb869 50%,#b07f31);color:#24190a}
+.btn-ghost{border-color:rgba(212,175,90,.45);color:#f1dfbf}
+.glass-panel,.feature-card,.metric,.swatch,.step,.contact-panel,.spec-item,.contact-item,.catalog-card{border:1px solid rgba(212,175,90,.3)}
+.feature-card:hover,.catalog-card:hover,.contact-item:hover{border-color:rgba(240,204,132,.65);box-shadow:0 10px 24px rgba(212,175,90,.11)}
+.catalog-filter{border-color:rgba(212,175,90,.35);color:#f0e1c5}
+.catalog-filter.active{background:linear-gradient(135deg,var(--gold),var(--gold-3));color:#24190a;border-color:var(--gold)}
+.side-nav .dot span:first-child{border-color:rgba(212,175,90,.55)}
+.side-nav .dot.active span:first-child{background:linear-gradient(135deg,var(--gold-2),var(--gold-3));box-shadow:0 0 0 8px rgba(212,175,90,.14)}
+.badge-float{border-color:rgba(212,175,90,.45)}
+.badge-float b{color:var(--gold-2)}
+.form-grid input:focus,.form-grid textarea:focus,.form-grid select:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(212,175,90,.14)}
+.contact-phone{font-weight:800;text-decoration:underline;text-underline-offset:4px}
