@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://1moalim1all1-cyber.github.io/wood-factory/sitemap.xml
