@@ -69,3 +69,19 @@
 .brand-name{display:block;white-space:nowrap;font-size:clamp(17px,1.55vw,23px);font-weight:900;line-height:1.4;color:var(--gold-2);text-shadow:0 1px 8px rgba(0,0,0,.28)}
 @media(max-width:760px){.brand-link{gap:7px}.brand-logo{width:clamp(48px,14vw,70px);height:46px}.brand-name{font-size:clamp(15px,4vw,19px)}.site-header .brand{flex:1 1 auto}.header-actions{flex-shrink:0}}
 @media(max-width:360px){.brand-logo{width:42px}.brand-name{font-size:14px}.header-actions .btn-primary{font-size:10px;padding:8px}}
+
+/* Performance mode: keep the dark/gold identity, minimize GPU and network-heavy effects. */
+.slide::after,.hero::after,.factory.bg-ready::after,.products.bg-ready::after,.materials.bg-ready::after,.workflow.bg-ready::after,.portfolio.bg-ready::after,.contact.bg-ready::after{background-image:none!important}
+.deck{background:linear-gradient(180deg,#0a0908,#13100c 60%,#0a0908)}
+.glass-panel,.float-card,.shot,.face{box-shadow:0 5px 18px rgba(0,0,0,.22)}
+.reveal{transition:opacity .22s ease,transform .22s ease}
+@media(max-width:1150px){
+ .reveal,.reveal.show{opacity:1!important;transform:none!important;transition:none!important}
+ .float-card,.card-a,.card-b,.card-c{transform:none!important}
+ .glass-panel,.float-card,.shot,.face{box-shadow:0 3px 12px rgba(0,0,0,.2)}
+ .slide{content-visibility:auto;contain-intrinsic-size:auto 820px}
+ .hero{content-visibility:visible}
+ .product-box .product-inner{transition-duration:.25s}
+ .feature-card,.tilt{transition:none}
+}
+@media(max-width:760px){.hero-points{margin:15px 0}.slide{isolation:auto}.slide::before{background:none}.stack-stage{perspective:none}.badge-float{display:none}}
