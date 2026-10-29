@@ -168,3 +168,25 @@ body{background:#f7f8fa;color:#20262d}
 .back ul{color:#48535d}
 .slide::before,.slide::after{background:none!important;opacity:0!important}
 @media(max-width:760px){.site-header{background:#fff}.slide{background:transparent}}
+
+/* Refined white, silver and champagne-gold identity */
+:root{--gold:#b68b3c;--gold-2:#8c6a2b;--gold-3:#755522;--line:#e1e3e6}
+.brand-name{color:#8c6a2b}
+.site-header{border-bottom:2px solid rgba(182,139,60,.48)}
+.main-nav a::after{background:linear-gradient(90deg,#8c6a2b,#d8b76c)}
+.eyebrow{color:#8c6a2b}
+.eyebrow::before{background:linear-gradient(90deg,#b68b3c,transparent)}
+.title-xl,.title-lg{color:#1f2933}
+.title-xl::first-line{ text-decoration-color:#b68b3c }
+.btn-primary{background:linear-gradient(135deg,#d3ad60,#b68b3c 55%,#8c6a2b);color:#241a0b;border:1px solid #a57a32;box-shadow:0 5px 16px rgba(143,103,36,.16)}
+.btn-primary:hover{background:linear-gradient(135deg,#e3bf73,#a77c35);color:#241a0b}
+.btn-ghost{border-color:#d8c39d}
+.glass-panel,.feature-card,.metric,.swatch,.step,.contact-panel,.catalog-card{border:1px solid #e4ded2}
+.feature-card:hover,.catalog-card:hover{border-color:#c9ad78}
+.metric strong,.contact-item strong,.spec-item strong,.catalog-info small,.contact-phone{color:#8c6a2b}
+.contact-phone:hover{color:#624713}
+.catalog-filter.active{background:#b68b3c;border-color:#b68b3c;color:#211a10}
+.catalog-filter:not(.active){border-color:#d9c9a9}
+.dot.active span:first-child{background:linear-gradient(135deg,#d8b76c,#98702d)}
+.form-grid input:focus,.form-grid textarea:focus,.form-grid select:focus{border-color:#b68b3c;box-shadow:0 0 0 3px rgba(182,139,60,.13)}
+::selection{background:#e8d5ad;color:#2b251b}
