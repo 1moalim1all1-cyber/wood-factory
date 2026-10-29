@@ -85,3 +85,8 @@
  .feature-card,.tilt{transition:none}
 }
 @media(max-width:760px){.hero-points{margin:15px 0}.slide{isolation:auto}.slide::before{background:none}.stack-stage{perspective:none}.badge-float{display:none}}
+
+/* Smooth low-power scrolling: no forced section snapping or idle transforms. */
+.deck{scroll-snap-type:none!important}
+.slide{scroll-snap-align:none}
+@media(max-width:1150px){.product-inner{transform-style:flat}.product-box{perspective:none}.product-box .face{backface-visibility:visible}.product-box .back{display:none}.product-box.is-flipped .front{display:none}.product-box.is-flipped .back{display:flex;transform:none;position:relative;min-height:100%}.product-box.is-flipped .product-inner{transform:none!important}.product-box:not(.is-flipped) .product-inner{transform:none!important}}
