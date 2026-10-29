@@ -24,3 +24,20 @@
 .block3d::after{filter:none!important;opacity:.45}
 .slide::after{transform:none!important}
 @media(min-width:901px){.deck{scroll-behavior:auto}.reveal{transition-duration:.45s}}
+
+/* Lightweight usability refresh: accessible navigation on phones/tablets */
+:focus-visible{outline:2px solid var(--gold-2);outline-offset:4px}
+@media(max-width:1150px){
+ .site-header{flex-wrap:wrap;gap:8px 12px}
+ .main-nav{display:flex;order:3;width:100%;justify-content:flex-start;flex-wrap:nowrap;gap:18px;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:thin;padding:4px 2px 0}
+ .main-nav a{white-space:nowrap;flex-shrink:0;font-size:12px;padding-bottom:7px}
+}
+@media(max-width:760px){
+ .site-header{padding:9px 12px}
+ .slide{padding-top:42px}
+ .main-nav{gap:15px}
+ .title-xl{font-size:clamp(29px,8vw,37px)}
+ .brand img{max-width:48vw}
+ .form-grid select option{background:#1c1711;color:#fff}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.mouse:before{animation:none}}
