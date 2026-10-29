@@ -1,4 +1,3 @@
-import {products} from './firebase.js';
 const grid=document.querySelector('#catalogGrid'),filters=document.querySelectorAll('.catalog-filter');
 let items=[],category='all';
 const labels={kitchens:'مطابخ',doors:'أبواب',bedrooms:'غرف نوم',dressing:'دريسنج',office:'مكاتب',decor:'ديكورات',custom:'تفصيل خاص'};
@@ -18,4 +17,6 @@ function render(){
 }
 filters.forEach(b=>b.addEventListener('click',()=>{category=b.dataset.category;filters.forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});render()}));
 filters.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.category==='all')));
-(async()=>{try{items=await products()}catch(e){console.warn('Catalog temporarily unavailable',e)}render()})();
+let fetched=false;
+async function loadCatalog(){if(fetched)return;fetched=true;try{const {products}=await import('./firebase.js');items=await products()}catch(e){console.warn('Catalog temporarily unavailable',e)}render()}
+if('IntersectionObserver' in window){const io=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){io.disconnect();loadCatalog()}},{rootMargin:'300px'});io.observe(document.querySelector('#catalog'))}else loadCatalog();
