@@ -10,3 +10,10 @@ document.querySelectorAll('.product-box').forEach(box=>{box.setAttribute('tabind
 const brand=document.querySelector('.site-header .brand');if(brand){brand.innerHTML='<a href="#hero" aria-label="مصنع ال طارق" style="display:flex;align-items:center"><img src="al-tareq-logo.webp" alt="مصنع ال طارق" width="245" height="82" decoding="async" fetchpriority="high" style="display:block;width:clamp(150px,16vw,245px);height:auto;max-height:62px;object-fit:contain"></a>';}document.title='مصنع آل طارق | أعمال خشبية وتصميم وتصنيع';
 
 if(slides[0])slides[0].classList.add('active-slide');
+
+const galleryModal=document.querySelector('#galleryModal'),galleryLarge=document.querySelector('#galleryLarge');
+const closeGallery=()=>{if(galleryModal){galleryModal.hidden=true;galleryLarge.removeAttribute('src');document.body.style.removeProperty('overflow')}};
+document.querySelectorAll('.gallery-grid .shot img').forEach(img=>{img.tabIndex=0;img.setAttribute('role','button');img.setAttribute('aria-label','تكبير صورة '+(img.alt||''));const open=()=>{galleryLarge.src=img.currentSrc||img.src;galleryLarge.alt=img.alt;galleryModal.hidden=false;document.querySelector('#closeGallery').focus()};img.addEventListener('click',open);img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}})});
+document.querySelector('#closeGallery')?.addEventListener('click',closeGallery);
+galleryModal?.addEventListener('click',e=>{if(e.target===galleryModal)closeGallery()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeGallery()});
