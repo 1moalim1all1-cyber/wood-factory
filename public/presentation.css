@@ -290,3 +290,6 @@ body{background:#252728;color:var(--text)}
 .wood-note{border:1px solid #846d4b;background:#3a3530;border-radius:14px;padding:14px 18px;color:#decdb6;line-height:1.8}
 @media(max-width:1050px){.wood-catalog{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:700px){.wood-catalog{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.wood-sample{height:95px}.wood-card-body{padding:12px}.wood-card h4{font-size:15px}.wood-card p{font-size:12px}}
 @media(max-width:400px){.wood-catalog{grid-template-columns:1fr}}
+
+/* Authentic photo panels for individually identified material samples */
+.wood-real-photo{display:block;width:100%;height:150px;object-fit:cover;object-position:center;background:#e6e0d6;border-bottom:1px solid #a38b69}.wood-card:has(.wood-real-photo) .wood-card-body{min-height:112px}.wood-sample{height:120px}.wood-card:not(:has(.wood-real-photo)) .wood-sample{display:none}.wood-card:not(:has(.wood-real-photo)) .wood-card-body:before{content:'صورة الخامة غير متاحة حاليًا';display:block;font-size:12px;color:#c1ae91;margin-bottom:9px}@media(max-width:700px){.wood-real-photo{height:118px}}
