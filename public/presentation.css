@@ -277,3 +277,16 @@ body{background:#252728;color:var(--text)}
 .gps-field #gpsStatus{font-size:13px;color:var(--muted);line-height:1.7}
 .gps-field button:disabled{opacity:.6}
 @media(max-width:650px){.materials-banner{height:205px}.materials-banner>div{right:16px;bottom:14px}}
+
+/* Materials catalog: compact wooden 3D specimens, no large hero image */
+.wood-intro{max-width:970px;margin-bottom:26px}
+.wood-group{margin:30px 0 45px}.wood-group h3{font-size:clamp(22px,2.6vw,32px);color:#f0cc84;margin:0 0 18px;padding-right:14px;border-right:4px solid #d4af5a}
+.wood-catalog{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.wood-card{background:#393735;border:1px solid rgba(212,175,90,.37);border-radius:20px;overflow:hidden;box-shadow:0 9px 20px #0003;transition:transform .22s,border-color .22s}
+.wood-card:hover{transform:translateY(-5px);border-color:#f0cc84}
+.wood-sample{height:120px;position:relative;background:repeating-linear-gradient(4deg,transparent 0 12px,rgba(63,32,9,.17) 13px 15px,transparent 16px 25px),linear-gradient(120deg,#422b1a,var(--wood) 32%,#ead6b3 52%,var(--wood) 73%,#5a3d27);border-bottom:1px solid #b89156}
+.wood-sample:after{content:"";position:absolute;inset:13px 16px;border:3px solid #fff3;border-bottom-color:#0003;border-right-color:#0003;border-radius:7px;transform:perspective(440px) rotateY(-9deg);box-shadow:12px 8px 10px #0004}
+.wood-card-body{padding:16px}.wood-card h4{margin:0 0 8px;font-size:18px;color:#f0cc84}.wood-card p{font-size:13px;line-height:1.8;color:#d8c9b8;margin:0}
+.wood-note{border:1px solid #846d4b;background:#3a3530;border-radius:14px;padding:14px 18px;color:#decdb6;line-height:1.8}
+@media(max-width:1050px){.wood-catalog{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:700px){.wood-catalog{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.wood-sample{height:95px}.wood-card-body{padding:12px}.wood-card h4{font-size:15px}.wood-card p{font-size:12px}}
+@media(max-width:400px){.wood-catalog{grid-template-columns:1fr}}
