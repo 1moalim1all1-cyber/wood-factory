@@ -244,3 +244,7 @@ body{background:#252728;color:var(--text)}
 .badge-float b{color:var(--gold-2)}
 .form-grid input:focus,.form-grid textarea:focus,.form-grid select:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(212,175,90,.14)}
 .contact-phone{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+
+/* Floating WhatsApp entry point for main site */
+.factory-floating-wa{position:fixed;z-index:65;bottom:22px;right:20px;padding:12px 19px;border-radius:40px;background:#198b53;color:#fff;font-weight:800;box-shadow:0 7px 21px #0005;text-decoration:none}.factory-floating-wa[hidden]{display:none}.factory-floating-wa:hover{background:#127345;color:#fff}
+@media(max-width:760px){.factory-floating-wa{bottom:13px;right:12px;padding:11px 15px}}
