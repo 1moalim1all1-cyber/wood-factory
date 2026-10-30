@@ -265,3 +265,15 @@ body{background:#252728;color:var(--text)}
 .directory-caption b{color:#f0cc84;font-size:13px}
 @media(max-width:900px){.directory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.directory-grid{grid-template-columns:1fr}.directory-card{height:265px}.page-directory{padding:45px 18px 60px}.standalone-deck .slide{padding-bottom:65px}}
+
+/* Materials showroom: photographic depth, matching the other dedicated pages */
+.materials-banner{height:clamp(190px,27vw,330px);margin:24px 0 30px;border:1px solid rgba(240,204,132,.56);border-radius:24px;position:relative;overflow:hidden;box-shadow:0 15px 34px #0005;isolation:isolate}
+.materials-banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.materials-banner:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#16130dea,transparent 78%);z-index:-1}
+.materials-banner>div{position:absolute;bottom:20px;right:24px;left:20px;display:grid;gap:5px;color:#fff}
+.materials-banner strong{font-size:clamp(20px,3vw,32px);color:#f0cc84}
+.materials-banner span{font-size:14px}
+.gps-field{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:10px 0}
+.gps-field #gpsStatus{font-size:13px;color:var(--muted);line-height:1.7}
+.gps-field button:disabled{opacity:.6}
+@media(max-width:650px){.materials-banner{height:205px}.materials-banner>div{right:16px;bottom:14px}}
