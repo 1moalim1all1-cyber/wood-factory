@@ -7,3 +7,5 @@
 .shop-visual span{color:var(--gold);font-weight:800}.shop-visual strong{font-size:clamp(25px,4vw,44px);max-width:700px}.shop-visual small{font-size:14px;color:#f0dfc4}
 .product{box-shadow:0 9px 25px #0003;transition:transform .24s,border-color .24s}.product:hover{transform:translateY(-5px);border-color:#d2ad65}
 @media(max-width:600px){.shop-visual{min-height:230px}.shop-visual>div{padding:20px}.product:hover{transform:none}}
+
+.gps-choice{width:100%;background:#453c2f;border:1px solid #d4af67;border-radius:12px;color:#f5d79c;padding:10px 12px;margin-top:15px}.gps-choice:disabled{opacity:.6}
